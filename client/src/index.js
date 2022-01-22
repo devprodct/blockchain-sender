@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Main from './pages/Main';
 import reportWebVitals from './reportWebVitals';
+import { TransactionsProvider } from './context/TransactionContext'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TransactionsProvider>
+      <Main />
+    </TransactionsProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
