@@ -28,7 +28,7 @@ export const Form = ({ onChange, submit }) => {
 
             <div className="form__group">
                 <input className='form__input dirty' type="text" onChange={(e) => onChange(e, 'keyword')}  />
-                <label className="form__label">Keyword(Gif)</label>
+                <label className="form__label">Keyword (Data)</label>
             </div>
 
             <div className="form__group">
